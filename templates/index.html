@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Search Nexus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="quantum-container">
+        <div class="search-header">
+            <h1>Quantum Search Nexus</h1>
+        </div>
+        
+        <div class="search-types">
+            <button class="search-type-btn active" data-type="web">Web Search</button>
+            <button class="search-type-btn" data-type="images">Image Search</button>
+            <button class="search-type-btn" data-type="news">News Search</button>
+        </div>
+        
+        <div class="search-wrapper">
+            <input type="text" id="search-input" placeholder="Explore the digital universe...">
+        </div>
+        
+        <div id="loading">
+            <div class="loading-animation"><div></div></div>
+            <div>Scanning the multiverse...</div>
+        </div>
+        
+        <div id="search-results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
